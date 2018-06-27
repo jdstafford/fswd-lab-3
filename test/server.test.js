@@ -68,8 +68,8 @@ describe('delete task', function () {
     it('allow user to delete task', function() {
         return request(server)
             .post('/users/tasks')
-            .get()
-            .expect(200, /deleted!/);
+            .get('/delatetask')
+            .expect(200, /Task deleted!/);
             
     });
 });
